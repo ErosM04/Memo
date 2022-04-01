@@ -1,0 +1,14 @@
+button{
+    border: 0px;
+    padding: 0px;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.row{
+    margin: 1%;
+}
+
+#text{
+    text-align: center;
+}
