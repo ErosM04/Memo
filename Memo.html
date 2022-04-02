@@ -6,26 +6,31 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="Style.css">
     </head>
-    <body>
+    <body onload="start()">
+        <!--Title-->
+        <div id="title">
+            <img id="title_img" src="images/title.png">
+        </div>
+        <!--Cards table-->
         <div class="row">
             <div class="col-lg-3">
                 <div>
-                    <button onclick="a()"><img src="back.jpg"></button>
+                    <button onclick="pressed('c0')"><img id="c0" src="./images/back.jpg"></button>
                 </div>
             </div>
             <div class="col-lg-3">
                 <div>
-                    <button onclick="a()"><img src="back.jpg"></button>
+                    <button onclick="pressed('c1')"><img id="c1" src="./images/back.jpg"></button>
                 </div>
             </div>
             <div class="col-lg-3">
                 <div>
-                    <button onclick="a()"><img src="back.jpg"></button>
+                    <button onclick="pressed('c2')"><img id="c2" src="./images/back.jpg"></button>
                 </div>
             </div>
             <div class="col-lg-3">
                 <div>
-                    <button onclick="a()"><img src="back.jpg"></button>
+                    <button onclick="pressed('c3')"><img id="c3" src="./images/back.jpg"></button>
                 </div>
             </div>
         </div>
@@ -33,28 +38,31 @@
         <div class="row">
             <div class="col-lg-3">
                 <div>
-                    <button onclick="a()"><img src="back.jpg"></button>
+                    <button onclick="pressed('c4')"><img id="c4" src="./images/back.jpg"></button>
                 </div>
             </div>
             <div class="col-lg-3">
                 <div>
-                    <button onclick="a()"><img src="back.jpg"></button>
+                    <button onclick="pressed('c5')"><img id="c5" src="./images/back.jpg"></button>
                 </div>
             </div>
             <div class="col-lg-3">
                 <div>
-                    <button onclick="a()"><img src="back.jpg"></button>
+                    <button onclick="pressed('c6')"><img id="c6" src="./images/back.jpg"></button>
                 </div>
             </div>
             <div class="col-lg-3">
                 <div>
-                    <button onclick="a()"><img src="back.jpg"></button>
+                    <button onclick="pressed('c7')"><img id="c7" src="./images/back.jpg"></button>
                 </div>
             </div>
         </div>
         <!-- Text -->
         <div id="text">
-            <p>Mosse</p> <!-- USA IL FORM -->
+            <form>
+                <label for="mosse">Mosse Rimaste:</label>
+                <input type="text" id="mosse" readonly>
+            </form>
         </div>
     </body>
 </html>

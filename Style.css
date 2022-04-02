@@ -1,8 +1,19 @@
+#title{
+    text-align: center;
+    background-color: gainsboro;
+    height: 17%;
+    border-bottom: 1px solid black;
+}
+
+#title_img{
+    margin-top: 0.5%;
+}
+
 button{
     border: 0px;
     padding: 0px;
     margin-left: 20%;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 .row{
@@ -11,4 +22,17 @@ button{
 
 #text{
     text-align: center;
+    margin-top: 2%;
+    padding-top: 1%;
+    font-size: 40;
+    border-top: 1px solid black;
+}
+
+#mosse{
+    text-align: center;
+    width: 5%;
+}
+
+form{
+    margin: 0px;
 }
