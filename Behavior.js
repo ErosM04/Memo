@@ -20,11 +20,11 @@ function start(){
  * Await is used because StackOverflow use it :)
  * @param {int} id the id of the carousel whose button was clicked
  */
-async function pressed(id){ //
+async function pressed(id){
     counter++;
     
     if(counter > 2){
-        counter--;
+        counter = 2;
         return;
     }
 
@@ -69,6 +69,7 @@ async function end(name, text){ //Deletes everything except for the title and di
         document.querySelector("#table").removeChild(document.querySelector(".row"));
     document.body.removeChild(document.querySelector("#text"));
     
+    //Creates the win/lost paragraph
     var paragraph = document.createElement("p");
     paragraph.innerHTML = text;
     paragraph.style.fontSize = 40;
@@ -77,9 +78,25 @@ async function end(name, text){ //Deletes everything except for the title and di
     document.getElementById("title").style.marginBottom = 10;
     document.getElementById("title").style.height = 200;
 
+    //Align center
+    document.body.style.textAlign = "center";
+
+    //Creates ythe reload button
+    var bt = document.createElement("button");
+    bt.textContent = "RELOAD";
+    bt.style.fontFamily = "YGO-Stone_Serif_Semibold";
+    bt.style.border = "3px #504B4B groove";
+    bt.style.marginLeft = "47%";
+    bt.style.marginRight = "50%";
+    bt.style.marginTop = "1%";
+    bt.style.marginBottom = "1%";
+    bt.style.fontSize = 20;
+    bt.setAttribute("onclick", "location.reload()");
+    document.body.appendChild(bt);
+
+    //Creates the won/lost image
     var img = document.createElement("img");
     img.src = "images/" + name + ".jpg";
-    document.body.style.textAlign = "center";
     document.body.appendChild(img);
 }
 
